@@ -91,12 +91,21 @@ main{
 }
 .caja-limitada{
     width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     ul{
         list-style: none;
         padding-left: 5px;
     }
 }
+.caja-limitada-inicio{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
 .caja-centrada{
     display: flex;
     justify-content: center;
@@ -256,12 +265,12 @@ main{
 }
 
 .caja-info{
+    width: 862px;
     text-align: center;
     padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0 65px;
     color: white;
     
     p{
