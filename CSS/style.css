@@ -89,17 +89,7 @@ main{
     justify-content: center;
     margin-bottom: 10px;
 }
-.caja-limitada{
-    width: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    ul{
-        list-style: none;
-        padding-left: 5px;
-    }
-}
 .caja-limitada-inicio{
     width: 1000px;
     display: flex;
@@ -176,6 +166,7 @@ main{
         font-weight: 600;
     }
 }
+
 .img-size-pareja{
     width: 350px;
     height: 500px;
@@ -228,24 +219,44 @@ main{
     border-radius: 10px;
     padding: 10px;
 }
+.caja-limitada{
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul{
+        list-style: none;
+        padding-left: 5px;
+    }
+}
+
+.lotes-galeria{
+    display: flex;
+}
+.centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .galeria{
     display: flex;
     align-items: center;
 }
 .foto-enorme{
-    width: 862px;
-    height: 500px;
+    width: 740px;
+    height: 475px;
     border: 5px outset;
     display: flex;
+    background-color: rgb(73, 0, 73);
 
     img{
         width: 100%;
     }
 }
-#foto-enorme-roblox{
-    background-color: rgb(73, 0, 73);
-}
+
+
 .botones-galeria button{
     background-color: aqua;
     padding: 15px;
@@ -257,15 +268,15 @@ main{
     border: 3px inset;
 }
 
-#boton-izquierdo-RB{
+.boton-izquierdo-RB{
     translate: 32px;
 }
-#boton-derecho-RB{
+.boton-derecho-RB{
     translate: -32px;
 }
 
 .caja-info{
-    width: 862px;
+    width: 740px;
     text-align: center;
     padding: 15px 0;
     display: flex;
