@@ -209,6 +209,7 @@ main{
 
 #menu-galeria{
     background-color: var(--color-2-T);
+    color: var(--texto-claro);
     padding: 20px 0;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -238,6 +239,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--texto-claro);
 }
 
 .galeria{

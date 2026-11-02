@@ -14,7 +14,8 @@ const ajustarImagenAlContenedor = (imagen) => {
 const imagenes_Y_Galeria = [
     "MEDIA/match-youka.png",
     "MEDIA/oc-youka/oc-youka-1.jpg",
-    "MEDIA/oc-youka/oc-youka-2.jpg"
+    "MEDIA/oc-youka/oc-youka-2.jpg",
+    "MEDIA/oc-youka/oc-youka-3.png"
 ];
 
 document.querySelectorAll("#magia-box").forEach((galeria) => {
@@ -47,7 +48,8 @@ document.querySelectorAll("#magia-box").forEach((galeria) => {
 const imagenes_M_Galeria = [
     "MEDIA/match-magia.png",
     "MEDIA/oc-magia/oc-magia-1.png",
-    "MEDIA/oc-magia/oc-magia-2.png"
+    "MEDIA/oc-magia/oc-magia-2.png",
+    "MEDIA/oc-magia/oc-magia-3.png"
 ];
 
 document.querySelectorAll("#youka-box").forEach((galeria) => {
