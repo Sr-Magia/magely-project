@@ -328,6 +328,15 @@ main{
         }
     }
 
+    .lotes-galeria{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja-limitada{
+        margin-bottom: 15px;
+    }
+
     .pareja{
         margin: 15px 0;
     }
@@ -347,7 +356,7 @@ main{
 
     .foto-enorme{
         width: 270px;
-        height: 157px;
+        height: 173px;
         border: 3px outset;
     }
     #info-RB{
@@ -356,5 +365,6 @@ main{
         border-left: 3px outset;
         border-right: 3px outset;
         border-bottom: 3px outset;
+        width: 270px;
     }
 }

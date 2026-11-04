@@ -105,3 +105,55 @@ document.querySelectorAll("#galeria-GAG").forEach((galeria) => {
         mostrarImagen(indiceActual + 1);
     });
 });
+
+
+
+// ╔══════════════════════════════════════════╗
+// ║ ---- Galería Catalog Avatar Creator ---- ║
+// ╚══════════════════════════════════════════╝
+const imagenes_CAC = [
+    "MEDIA/roblox-moment/CAC-1-1.png",
+    "MEDIA/roblox-moment/CAC-1-2.png",
+    "MEDIA/roblox-moment/CAC-1-3.png",
+    "MEDIA/roblox-moment/CAC-2-1.png",
+    "MEDIA/roblox-moment/CAC-2-2.png"
+];
+
+document.querySelectorAll("#galeria-CAC").forEach((galeria) => {
+    const imagen = galeria.querySelector("#foto-enorme-CAC img");
+    const botonAnterior = galeria.querySelector("#boton-izquierdo-CAC");
+    const botonSiguiente = galeria.querySelector("#boton-derecho-CAC");
+    const contenedor = galeria.parentElement;
+    const fecha = contenedor.querySelector("#fecha-CAC h2");
+    const texto = contenedor.querySelector("#texto-CAC p");
+    const fechaPredeterminada = fecha.textContent;
+    const textoPredeterminado = texto.innerHTML;
+    const informacion_CAC = [
+        null,
+        { fecha: "14 - 06 - 2026", texto: "Nosotros con nuestras pets q nos corresponde :3<br>Youka con su murcielaguito<br>Magia con su kitsune" },
+        { fecha: "15 - 06 - 2026", texto: "He esperado un buen rato para q ella esté aqui<br>y finalmente vino a por mi... <3" },
+        { fecha: "21 - 10 - 2026", texto: "El garden d mi Yuki lleno de murcielagos enormes :D" },
+        { fecha: "21 - 10 - 2026", texto: "Volvimos a estar juntos en el<br>Roblo despues de un buen tiempo..." },
+    ];
+    let indiceActual = 0;
+
+    ajustarImagenRobloxAlContenedor(imagen);
+
+    const mostrarImagen = (indice) => {
+        indiceActual = (indice + imagenes_CAC.length) % imagenes_CAC.length;
+        imagen.src = imagenes_CAC[indiceActual];
+        imagen.alt = `Imagen ${indiceActual + 1} de ${imagenes_CAC.length}`;
+
+        const informacion = informacion_CAC[indiceActual];
+        fecha.textContent = informacion?.fecha ?? fechaPredeterminada;
+        texto.innerHTML = informacion?.texto ?? textoPredeterminado;
+    };
+
+    botonAnterior.addEventListener("click", () => {
+        mostrarImagen(indiceActual - 1);
+    });
+
+    botonSiguiente.addEventListener("click", () => {
+        mostrarImagen(indiceActual + 1);
+    });
+});
